@@ -1,8 +1,19 @@
 @charset "UTF-8";
-.slider_wrap {
-  background: #709dca;
+.clock_container{
+  margin-top: 50px;
+  display: flex;
+  /*align-items: center;*/
+  justify-content: center;
 }
-
+.clock {
+  max-width: 100px;
+}
+.text {
+  font-family: "Gotham - Black";
+  align-self: flex-end;
+  margin-right: 20px;
+  margin-left: 10px;
+}
 .section_slider {
   padding-top: 110px;
   position: relative;
@@ -12,7 +23,7 @@
 .slider {
   position: absolute;
   left: 274px;
-  top: 312px;
+  top: 112px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -51,3 +62,16 @@
   background: url("../right.png");
 }
 .button_left:hover, .button_right:hover{opacity:.6;}
+
+@font-face {
+  font-family: "Gotham - Black";
+  src: url("../fonts/Gotham - Black/Metropolis-Black.svg");
+  src: url("../fonts/Gotham - Black/Metropolis-Black.eot?#iefix") format("embedded-opentype"),
+  url("../fonts/Gotham - Black/Metropolis-Black.woff2") format("woff2"),
+  url("../fonts/Gotham - Black/Metropolis-Black.woff") format("woff"),
+  url("../fonts/Gotham - Black/Metropolis-Black.ttf") format("truetype"),
+  url("../fonts/Gotham - Black/Metropolis-Black.svg#Metropolis-Black") format("svg");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
